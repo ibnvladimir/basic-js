@@ -19,9 +19,6 @@ module.exports = function repeater(str, options) {
 function agregator(str, number, separator) {
   let arr = []
   for (let i = 0; i < number; i++) {
-    if (typeof(str) !== 'string') {
-      str = str + '';
-    }
     arr[i] = str;
   }
   return arr.join(separator);
